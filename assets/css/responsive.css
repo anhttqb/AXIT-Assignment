@@ -1,0 +1,229 @@
+/* On mobile */
+@media (max-width: 739px) {
+    .content-section {
+        padding: 32px 0;
+    }
+    .features-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features__title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+    .features__desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .features-form__container {
+        width: 290px;
+        float: none;
+        margin: auto;
+    }
+    /* tab section */
+    .tabs__building {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    .tabs__floor {
+        margin: 0 2px;
+    }
+
+    .tabs__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs__title {
+        margin-bottom: 20px;
+    }
+
+    .tabs__desc {
+        text-align: center;
+        word-break: unset;
+    }
+    /* sublist section */
+    .sublist__info {
+        padding: 0;
+        position: unset;
+    }
+
+    .sublist__img {
+        position: unset;
+        margin: 0;
+    }
+
+    .sublist__item-content {
+        margin-left: 16px;
+    }
+
+    /* standard Pic section */
+    .standard__info {
+        padding: 0;
+    }
+
+    .standard__desc {
+        width: 100%;
+    }
+    /* reason section */
+    .reasons-detail {
+        margin-bottom: 32px;
+    }
+    .reasons-detail.last {
+        margin-bottom: 0;
+    }
+
+    .reasons-intro__title,
+    .stylish-intro__title {
+        font-size: 2.4rem;
+    }
+
+    .reasons-intro__desc {
+        margin-bottom: 32px;
+    }
+
+    .reasons-detail__title {
+        margin-top: 20px;
+    }
+    /* contact section */
+    .contact-intro__desc {
+        margin-bottom: 24px;
+    }
+
+    .contact__form-left {
+        padding: 0;
+    }
+
+    .contact__form-right {
+        padding: 0;
+    }
+
+    .contact__form-right textarea {
+        min-height: auto;
+    }
+}
+/* On tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* feature section */
+    .features-intro {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .features-intro>span {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .features__title {
+        font-size: 2.6rem;
+    }
+    
+    .features__desc {
+        width: 100%;
+    }
+
+    .features-form__container {
+        margin-right: 20px;
+    }
+    /* tabs section */
+    .tabs__building {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    .tabs__floor {
+        margin-right: 4px;
+    }
+
+    .tabs__title {
+        margin-bottom: 16px;
+    }
+
+    .tabs__img-wrapper {
+        padding-top: 32px;
+    }
+
+    /* sublist section */
+    .sublist__info {
+        padding: 0;
+        padding-left: 50px;
+    }
+    .sublist__img {
+        margin: 0;
+    }
+
+    .sublist__item {
+        display: flex;
+        margin: 48px 0 0 0;
+    }
+    /* standard section */
+    .standard__info {
+        padding: 0 50px 0 0;
+    }
+
+    .standard__img {
+        margin: 0;
+    }
+    /* reason section */
+
+    /* contact section */
+    .contact-intro__desc {
+        margin-bottom: 32px;
+    }
+    .contact__form-left {
+        padding-right: 10px;
+    }
+    .contact__form-right {
+        padding-left: 10px;
+    }
+}
+
+/* On mobile + tablet */
+@media (max-width: 1023px) {
+    .content-container {
+        margin: 0 12px;
+    }
+    /* navbar section */
+    .navbar__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__brand {
+        line-height: 60px;
+        padding-left: 12px;
+    }
+    .navbar__list {
+        background-color: var(--black-color);
+        flex-direction: column;
+        width: 100%;
+        padding-left: 12px;
+        height: 0;
+        transition: all 0.3s;
+    }
+    .navbar__item {
+        margin-left: 0;
+        overflow: hidden;
+    }
+
+    .navbar__item-link {
+        display: block;
+        padding: 12px 0;
+    }
+}
+
+/* On pc */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .navbar__list {
+        height: auto !important;
+    }
+}
